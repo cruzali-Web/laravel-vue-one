@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Rutas publicas
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('categorias', function() {
+    $categorias= [
+        'Fideos', 
+        'Jitomates',
+    ];
+
+    foreach ($categorias as $categoria) {
+        echo $categoria.'<br></br>';
+    }
+});
+
+Route::get('categorias/fideos', function () {
+    echo 'Productos de fideos';
 });
