@@ -1,16 +1,22 @@
-import { createRoute, createWebHistory } from "vue-router";
-import AppComponent from '.layouts/App.vue'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/',
-    component: AppComponent
+    name: 'Home',
+    component: () => import('../pages/Home.vue')
   },
   {
     path: '/about',
-    component: AppComponent
+    name: 'About',
+    component: () => import('../pages/About.vue')
+  },
+  {
+    path: '/vueti-components',
+    name: 'Vueti-Components',
+    component: () => import('../pages/Vueti-Components1.vue')
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),

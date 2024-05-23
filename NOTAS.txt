@@ -1,0 +1,5 @@
+Proyecto para aplicar algunos conceptos de Vue 3 y Laravel 10.
+
+En el proyecto limpio, sin estilos ni otros componentes personalizados, luego de instalar vuetify, los inputs como el v-combobox en su background se vuelve obscuro y se pierde el texto, ademas se generan bordes que le dan un mal estilo.
+
+
